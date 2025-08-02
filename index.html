@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VaniLekhan</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="container">
+
+<h1>VaniLekhan</h1>
+  <h3>Speech to Text Converter (Same Language)</h3>
+
+  <label for="language">Select Input Language:</label>
+  <select id="language">
+    <option value="en-UK">English (India)</option>
+    <option value="hi-IN">Hindi (हिन्दी)</option>
+    <option value="ta-IN">Tamil (தமிழ்)</option>
+    <option value="te-IN">Telugu (తెలుగు)</option>
+    <option value="bn-IN">Bengali (বাংলা)</option>
+    <option value="mr-IN">Marathi (मराठी)</option>
+    <option value="gu-IN">Gujarati (ગુજરાતી)</option>
+    <option value="kn-IN">Kannada (ಕನ್ನಡ)</option>
+    <option value="ml-IN">Malayalam (മലയാളം)</option>
+    <option value="pa-IN">Punjabi (ਪੰਜਾਬੀ)</option>
+    <option value="ur-IN">Urdu (اردو)</option>
+  </select>
+
+  <button id="mic">🎤 Start Listening</button>
+
+  <label for="text">Recognized Text:</label>
+  <textarea id="text" placeholder="Your speech will appear here..."></textarea>
+</div>
+
+
+<div class="export-buttons">
+  <button id="saveTxt">Save as .txt</button>
+ <button id="copyText">Copy to Clipboard</button>
+ <button id="savePdf">Save as PDF</button>
+
+</div>
+
+
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>
